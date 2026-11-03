@@ -10,6 +10,7 @@ app.get('/', (_request, response) => {
     <p>The application is running.</p>
     <p>Version ${version}</p>
     <p>Verified by GitHub Actions. Deployed on Render.</p>
+    <p>Preview deployment</p>
   `);
 });
 
@@ -24,5 +25,6 @@ app.get('/api/version', (_request, response) => {
     version: process.env.APP_VERSION ?? 'development',
   });
 });
+
 
 export default app;
